@@ -35,7 +35,7 @@ le = LabelEncoder()
 le.fit(desc_df["Disease"].unique())
 
 # Configure Gemini API (⚠️ Replace with your actual key)
-genai.configure(api_key="AIzaSyDfLp8N2vGeYdB09UE3oNI2vL3MWab0-Tg")
+genai.configure(api_key="YOUR API KEY")
 
 @app.route("/", methods=["GET", "POST"])
 def home():
